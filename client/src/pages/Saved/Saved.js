@@ -9,12 +9,14 @@ class SavedBooksContainer extends Component {
         books: {},
     };
 
+    //on mount, initializes sidenav and loads saved books
     componentDidMount(){
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
         this.loadBooks();
     }
 
+    //loads saved books from the Mongo Database
     loadBooks = () => {
         API.getBooks()
             .then(res =>
@@ -24,6 +26,7 @@ class SavedBooksContainer extends Component {
 
     }
 
+    //deletes a saved book from the Mongo Database
     deleteBook = (id) => {
         API.deleteBook(id)
             .then(res => this.loadBooks())
