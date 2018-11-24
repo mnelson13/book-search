@@ -1,0 +1,24 @@
+.result {
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 10px
+}
+.resultImg {
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons {
+    float: right;
+    margin: 25px 30px 10px 10px;
+}
+h5 {
+    font-family: 'Proza Libre', sans-serif;
+    padding-top: 10px;
+}
+p {
+    margin-top: 0px;
+    padding-right: 30px;
+}
