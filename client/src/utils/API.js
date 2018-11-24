@@ -1,8 +1,8 @@
 import axios from "axios";
 
-
+const KEY = process.env.REACT_APP_API_KEY || process.env.GOOGLE_API_KEY;
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=";
-const APIKEY = "&key=" + process.env.REACT_APP_API_KEY;
+const APIKEY = "&key=" + KEY;
 
 export default {
   search: function(query){
