@@ -82,7 +82,7 @@ class BooksContainer extends Component {
                         key={book.id}
                         result={book.volumeInfo}
                         title={book.volumeInfo.title}
-                        author={book.volumeInfo.authors}
+                        author={book.volumeInfo.authors[0]}
                         link={book.volumeInfo.infoLink}
                         image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.smallThumbnail : "https://vignette.wikia.nocookie.net/janethevirgin/images/4/42/Image-not-available_1.jpg/revision/latest?cb=20150721102313"}
                         description={book.volumeInfo.description}
